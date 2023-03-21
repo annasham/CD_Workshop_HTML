@@ -1,22 +1,38 @@
 body {
-  background: white;
+  background: #FFFFFF;
   counter-reset: page;
-  font-family: "forma-djr-micro", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Test Founders Grotesk";
+  font-size: 11pt;
+  text-align: center;
 }
 h1 {
-  font-family: "lores-12", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+  font-family: "Rixel";
+  font-size: 64pt;
+  line-height: 1;
 }
 
 h2 {
+  font-family: "Rixel";
+  font-size: 24pt;
   break-before: page;
+}
+
+p{
+  color: #82828C;
 }
 
 #content{
   break-before: page;
+  text-align: left;
+}
+
+#gallery {
+  column-count: 1;
+  align-content: center;
+}
+
+#description {
+  font-size: 11pt;
 }
 
 @media print {
@@ -32,20 +48,22 @@ h2 {
 }
 @page:left {
   margin-left: 0.25in;
-  margin-right: 1in;
+  margin-right: 0.25in;
   @bottom-left{
     content: counter(page);
   }
   @bottom-right{
     content:"LOL Ranked in Data";
+    color: gray;
   }
 }
 
 @page:right {
-  margin-left: 1in;
+  margin-left: 0.25in;
   margin-right: 0.25in;
   @bottom-left {
     content:"Anna Sham";
+    color: gray;
   }
   @bottom-right{
     content: counter(page);
