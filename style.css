@@ -1,7 +1,9 @@
 body {
   background: lightgray;
   counter-reset: page;
-  font-family: sans-serif;
+  font-family: "forma-djr-micro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 h1 {
   font-family: "lores-12", sans-serif;
