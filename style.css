@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   background: lightgray;
+  counter-reset: page;
 }
 
 h2 {
@@ -21,8 +22,26 @@ h2 {
 @page:left {
   margin-left: 0.25in;
   margin-right: 1in;
+  @bottom-left{
+    content: counter(page);
+  }
+  @bottom-right{
+    content:"In Game Statistics";
+  }
 }
 @page:right {
   margin-left: 1in;
   margin-right: 0.25in;
+  @bottom-left {
+    content:"Anna Sham";
+  }
+  @bottom-right{
+    content: counter(page);
+  }
+}
+
+/* multi column*/
+.two-col{
+  column-count: 2;
+  column-gap: 2em;
 }
