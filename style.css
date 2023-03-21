@@ -1,10 +1,16 @@
 body {
-  font-family: sans-serif;
   background: lightgray;
   counter-reset: page;
+  font-family: "lores-12", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h2 {
+  break-before: page;
+}
+
+#content{
   break-before: page;
 }
 
