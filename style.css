@@ -5,7 +5,7 @@ body {
 }
 
 h2 {
-  break-after: page;
+  break-before: page;
 }
 
 @media print {
