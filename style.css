@@ -3,7 +3,8 @@ body {
   counter-reset: page;
   font-family: "Test Founders Grotesk";
   font-size: 11pt;
-  text-align: center;
+  text-align: left;
+  line-height: 1;
 }
 h1 {
   font-family: "Rixel";
@@ -27,7 +28,6 @@ p{
 }
 
 #gallery {
-  column-count: 1;
   align-content: center;
 }
 
