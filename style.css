@@ -1,21 +1,88 @@
 body {
   background: #FFFFFF;
   counter-reset: page;
-  font-family: "Test Founders Grotesk";
+  font-family: "Neue Haas Grotesk Display Pro";
   font-size: 11pt;
   text-align: left;
   line-height: 1;
 }
+
+/* #cover {
+  width: 200px;
+} */
+
 h1 {
-  font-family: "Rixel";
-  font-size: 64pt;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 32pt;
   line-height: 1;
+  color: #004FC7;
 }
 
 h2 {
-  font-family: "Rixel";
-  font-size: 24pt;
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 48pt;
+  font-weight: 500;
+  line-height: auto;
   break-before: page;
+  color: #004FC7;
+}
+
+h3{
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-size: 18pt;
+  font-weight: 500;
+  color: #004FC7;
+}
+
+h4{
+  font-family: "Neue Haas Grotesk Display Pro";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 100%;
+}
+
+#seasonTenStat{
+line-height: 120%;
+padding-top: 100px;
+}
+
+#seasonElevenStat{
+  line-height: 120%;
+  padding-top: 100px;
+  }
+
+  #seasonTwelveStat{
+    line-height: 120%;
+    padding-top: 100px;
+    }
+
+#statOne{
+  font-size: 40pt;
+  font-weight: 500;
+  color: #004FC7;
+}
+
+#kdaOne{
+  padding-top: 100px;
+  line-height: 0;
+}
+
+#block{
+  height: 300px;
+}
+
+#karma{
+ object-fit: cover;
+ /* margin-left: 0in;
+ margin-right: 0in; */
+}
+
+#lux{
+  object-fit: cover;
+}
+
+#cover {
+  break-after: always;
 }
 
 p{
@@ -35,6 +102,54 @@ p{
   font-size: 11pt;
 }
 
+#last{
+  line-height: 10px;
+  padding-top: 100px;
+  color: #004FC7;
+}
+
+#verdict{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 60px;
+  color: #004FC7;
+}
+
+#heading{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  padding-top: 100px;
+  color: #004FC7;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  background-image: url("/images/background.svg");
+  background-repeat: repeat;
+  height: 1117px;
+  position: relative;
+  align-content: center;
+}
+.container &gt; :not(.full-bleed) {
+  grid-column: 2;
+}
+
+blockquote {
+  line-height: 1.6;
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0 auto;
+  width: min(80%, 43.75rem);
+  text-align: center;
+  padding: 3rem 1.5rem;
+}
+cite {
+  white-space: nowrap;
+}
+
 @media print {
   body {
     background: white;
@@ -45,7 +160,9 @@ p{
   size: 5in 8in;
   margin-top: 0.25in;
   margin-bottom: 0.5in;
+  bleed: 6mm;
 }
+
 @page:left {
   margin-left: 0.25in;
   margin-right: 0.25in;
@@ -68,6 +185,10 @@ p{
   @bottom-right{
     content: counter(page);
   }
+}
+
+@media print{
+
 }
 
 /* multi column
