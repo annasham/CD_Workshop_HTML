@@ -139,45 +139,51 @@ p{
   margin-left: 50%;
 }
 
-/* .full-bleed-image {
-  position: absolute;
-  left: -20mm;
-  right: 0;
-  top: -20mm;
-  bottom: -1000mm;
-} */
+.blank-left{
+  page-break-after: page;
+}
 
 .full-bleed-cover{
   margin: -80px -80px 0 -80px;
 }
 
-/* @page:nth(2){
-  margin: 20px 30px;
-} */
-
-/* .full-bleed-title{
-  margin: -20px 0 0 0;
-  margin-left: -23px;
-} */
+.full-bleed-title{
+  margin: -25px -950px 0 -24px;
+  object-fit: cover;
+}
 
 .full-bleed {
   margin: -50px -50px -50px 0;
-  margin-left: -23px;
+  margin-left: -24px;
 }
 
 .full-bleed-soraka{
   margin: -48px -205px -100px 0;
-  margin-left: -23px;
+  margin-left: -24px;
 }
 
 .full-bleed-lux{
-  margin: -50px -210px -50px 0;
-  margin-left: -23px;
+  margin: -60px -210px -50px 0;
+  margin-left: -24px;
+}
+
+.full-bleed-ahri{
+  margin-top: -26px;
+  margin-left: -24px;
+}
+
+.full-bleed-back-cover{
+  margin: -30px 0 0 0;
+  margin-left: -24px;
+}
+
+.blank-two{
+  height: 1000px;
 }
 
 .full-bleed-seraphine{
   margin: -50px -215px -50px 0;
-  margin-left: -23px;
+  margin-left: -24px;
 }
 
 .full-bleed-recap{
@@ -195,6 +201,19 @@ p{
   color: #004FC7;
 }
 
+.full-bleed-blank-left{
+  margin: -30px 0 0 0;
+  margin-left: -24px;
+}
+
+.blank:after{
+  display: block;
+  page-break-before: always;
+}
+
+.blank-three{
+  height: 2000px;
+}
 
 blockquote {
   line-height: 1.6;
@@ -250,11 +269,11 @@ cite {
 @media print{
 } */
 
-/* multi column
+multi column
 .two-col{
   column-count: 2;
   column-gap: 2em;
-} */
+}
 
 .pagedjs_pagebox {
   grid-template-columns:
